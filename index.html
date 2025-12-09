@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Weeknd — XO Fan Page</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-logo">
+<div class="xo-text">XO</div>
+<div class="creator-info">KHAN AKIB • 24229028</div>
+</div>
+<ul class="nav-menu">
+<li><a href="#home">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#tour">TOUR</a></li>
+<li><a href="#merch">SHOP</a></li>
+<li><a href="#gallery">GALLERY</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1 class="hero-title">THE WEEKND</h1>
+<p class="hero-subtitle">XO TIL WE OVERDOSE • UNOFFICIAL FAN PAGE</p>
+<a href="#merch" class="hero-btn">SHOP NOW</a>
+</div>
+</section>
+
+<section class="about-section" id="about">
+<div class="container">
+<h2 class="section-title">ABEL TESFAYE</h2>
+<div class="about-grid">
+<div class="about-text">
+<p>Born in Toronto, Abel Makkonen Tesfaye rose from mystery to become one of music's most influential voices. The Weeknd's dark R&B aesthetic and cinematic storytelling have redefined contemporary music.</p>
+<p>From the underground mixtape trilogy to chart-topping albums like "Starboy," "After Hours," and "Dawn FM," his evolution showcases artistic fearlessness and innovation.</p>
+<p>With multiple Grammy Awards, billions of streams, and a signature sound that blends 80s nostalgia with futuristic production, The Weeknd continues to push boundaries.</p>
+</div>
+<div class="about-stats">
+<div class="stat-box">
+<h3>15B+</h3>
+<p>STREAMS</p>
+</div>
+<div class="stat-box">
+<h3>4</h3>
+<p>GRAMMYS</p>
+</div>
+<div class="stat-box">
+<h3>10+</h3>
+<p>ALBUMS</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="tour-section" id="tour">
+<div class="container">
+<h2 class="section-title">TOUR DATES 2026</h2>
+<div class="tour-list">
+<div class="tour-item">
+<div class="tour-date">
+<span class="month">JAN</span>
+<span class="day">18</span>
+</div>
+<div class="tour-details">
+<h3>Los Angeles, CA</h3>
+<p>SoFi Stadium</p>
+</div>
+<button class="ticket-btn" onclick="showTicketPrice('Los Angeles', 250)">TICKETS</button>
+</div>
+<div class="tour-item">
+<div class="tour-date">
+<span class="month">FEB</span>
+<span class="day">08</span>
+</div>
+<div class="tour-details">
+<h3>New York, NY</h3>
+<p>Madison Square Garden</p>
+</div>
+<button class="ticket-btn sold-out">SOLD OUT</button>
+</div>
+<div class="tour-item">
+<div class="tour-date">
+<span class="month">FEB</span>
+<span class="day">22</span>
+</div>
+<div class="tour-details">
+<h3>Toronto, ON</h3>
+<p>Rogers Centre</p>
+</div>
+<button class="ticket-btn" onclick="showTicketPrice('Toronto', 220)">TICKETS</button>
+</div>
+<div class="tour-item">
+<div class="tour-date">
+<span class="month">MAR</span>
+<span class="day">15</span>
+</div>
+<div class="tour-details">
+<h3>London, UK</h3>
+<p>Wembley Stadium</p>
+</div>
+<button class="ticket-btn" onclick="showTicketPrice('London', 280)">TICKETS</button>
+</div>
+<div class="tour-item">
+<div class="tour-date">
+<span class="month">APR</span>
+<span class="day">05</span>
+</div>
+<div class="tour-details">
+<h3>Paris, FR</h3>
+<p>Stade de France</p>
+</div>
+<button class="ticket-btn" onclick="showTicketPrice('Paris', 260)">TICKETS</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="merch-section" id="merch">
+<div class="container">
+<h2 class="section-title">OFFICIAL MERCHANDISE</h2>
+<div class="merch-grid">
+<div class="merch-card">
+<img src="https://xo.store/cdn/shop/files/2f.png?v=1764345609&width=600" alt="House of Balloons Tee">
+<div class="merch-info">
+<h3>HOUSE OF BALLOONS TEE</h3>
+<p class="price">$55.00</p>
+<button class="buy-btn" onclick="showMerchPrice('House of Balloons Tee', 55)">BUY NOW</button>
+</div>
+</div>
+<div class="merch-card">
+<img src="https://xo.store/cdn/shop/files/4f.png?v=1764345508&width=600" alt="Kiss Land Tee">
+<div class="merch-info">
+<h3>KISS LAND TEE</h3>
+<p class="price">$55.00</p>
+<button class="buy-btn" onclick="showMerchPrice('Kiss Land Tee', 55)">BUY NOW</button>
+</div>
+</div>
+<div class="merch-card">
+<img src="https://xo.store/cdn/shop/files/8f.png?v=1764344877&width=600" alt="Beauty Behind The Madness Hoodie">
+<div class="merch-info">
+<h3>BBTM HOODIE</h3>
+<p class="price">$135.00</p>
+<button class="buy-btn" onclick="showMerchPrice('BBTM Hoodie', 135)">BUY NOW</button>
+</div>
+</div>
+<div class="merch-card">
+<img src="https://xo.store/cdn/shop/files/5f.png?v=1764344880&width=600" alt="Starboy Crewneck">
+<div class="merch-info">
+<h3>STARBOY CREWNECK</h3>
+<p class="price">$125.00</p>
+<button class="buy-btn" onclick="showMerchPrice('Starboy Crewneck', 125)">BUY NOW</button>
+</div>
+</div>
+<div class="merch-card">
+<img src="https://xo.store/cdn/shop/files/6f.png?v=1764344878&width=600" alt="After Hours Crewneck">
+<div class="merch-info">
+<h3>AFTER HOURS CREWNECK</h3>
+<p class="price">$125.00</p>
+<button class="buy-btn" onclick="showMerchPrice('After Hours Crewneck', 125)">BUY NOW</button>
+</div>
+</div>
+<div class="merch-card">
+<img src="https://xo.store/cdn/shop/files/p8.png?v=1764344882&width=600" alt="Starboy Poster">
+<div class="merch-info">
+<h3>STARBOY POSTER</h3>
+<p class="price">$30.00</p>
+<button class="buy-btn" onclick="showMerchPrice('Starboy Poster', 30)">BUY NOW</button>
+</div>
+</div>
+</div>
+<a href="#" class="view-all-btn">VIEW ALL PRODUCTS</a>
+</div>
+</section>
+
+<section class="gallery-section" id="gallery">
+<div class="container">
+<h2 class="section-title">ERA GALLERY</h2>
+<div class="gallery-grid">
+<div class="gallery-card">
+<img src="img/weeknd9.jpg" alt="Early Years">
+<div class="gallery-overlay">
+<h3>EARLY YEARS</h3>
+<p>Trilogy Era</p>
+</div>
+</div>
+<div class="gallery-card">
+<img src="img/weeknd7.png" alt="Kiss Land">
+<div class="gallery-overlay">
+<h3>KISS LAND</h3>
+<p>2013</p>
+</div>
+</div>
+<div class="gallery-card">
+<img src="img/weeknd.3.png" alt="Beauty Behind The Madness">
+<div class="gallery-overlay">
+<h3>BBTM</h3>
+<p>2015</p>
+</div>
+</div>
+<div class="gallery-card">
+<img src="img/weeknd10.jpg" alt="Starboy">
+<div class="gallery-overlay">
+<h3>STARBOY</h3>
+<p>2016</p>
+</div>
+</div>
+<div class="gallery-card">
+<img src="img/weeknd2.jpg" alt="After Hours">
+<div class="gallery-overlay">
+<h3>AFTER HOURS</h3>
+<p>2020</p>
+</div>
+</div>
+<div class="gallery-card">
+<img src="img/weeknd13.jpg" alt="Dawn FM">
+<div class="gallery-overlay">
+<h3>DAWN FM</h3>
+<p>2022</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-logo">XO</div>
+<p>Made by KHAN AKIB • ID: 24229028</p>
+<p>© 2025 The Weeknd / XO Records. This is an unofficial fan tribute page.</p>
+<div class="social-links">
+<a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+<a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+<a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+</div>
+</div>
+</footer>
+
+<!-- Modal for Ticket Price -->
+<div id="priceModal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">&times;</span>
+<h2 id="modalTitle"></h2>
+<div id="modalBody"></div>
+</div>
+</div>
+
+<script>
+function showTicketPrice(city, basePrice) {
+const serviceFee = basePrice * 0.15;
+const tax = (basePrice + serviceFee) * 0.08;
+const total = basePrice + serviceFee + tax;
+
+document.getElementById('modalTitle').textContent = city + ' Concert Ticket';
+document.getElementById('modalBody').innerHTML = `
+<div class="price-breakdown">
+<div class="price-row">
+<span>Ticket Price:</span>
+<span>$${basePrice.toFixed(2)}</span>
+</div>
+<div class="price-row">
+<span>Service Fee (15%):</span>
+<span>$${serviceFee.toFixed(2)}</span>
+</div>
+<div class="price-row">
+<span>Tax (8%):</span>
+<span>$${tax.toFixed(2)}</span>
+</div>
+<div class="price-row total">
+<span><strong>TOTAL:</strong></span>
+<span><strong>$${total.toFixed(2)}</strong></span>
+</div>
+<button class="confirm-btn" onclick="closeModal()">PROCEED TO CHECKOUT</button>
+</div>
+`;
+document.getElementById('priceModal').style.display = 'block';
+}
+
+function showMerchPrice(itemName, basePrice) {
+const shipping = 12.00;
+const tax = (basePrice + shipping) * 0.08;
+const total = basePrice + shipping + tax;
+
+document.getElementById('modalTitle').textContent = itemName;
+document.getElementById('modalBody').innerHTML = `
+<div class="price-breakdown">
+<div class="price-row">
+<span>Item Price:</span>
+<span>$${basePrice.toFixed(2)}</span>
+</div>
+<div class="price-row">
+<span>Shipping:</span>
+<span>$${shipping.toFixed(2)}</span>
+</div>
+<div class="price-row">
+<span>Tax (8%):</span>
+<span>$${tax.toFixed(2)}</span>
+</div>
+<div class="price-row total">
+<span><strong>TOTAL:</strong></span>
+<span><strong>$${total.toFixed(2)}</strong></span>
+</div>
+<button class="confirm-btn" onclick="closeModal()">ADD TO CART</button>
+</div>
+`;
+document.getElementById('priceModal').style.display = 'block';
+}
+
+function closeModal() {
+document.getElementById('priceModal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+const modal = document.getElementById('priceModal');
+if (event.target == modal) {
+modal.style.display = 'none';
+}
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,601 @@
+@font-face {
+font-family: "Emilio";
+src: url("NEXERA.ttf") format("truetype");
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Emilio", Arial, sans-serif;
+background: #0a0a0a;
+color: #fff;
+overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+background: rgba(10, 10, 10, 0.95);
+backdrop-filter: blur(20px);
+z-index: 1000;
+padding: 20px 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-logo {
+display: flex;
+flex-direction: row;
+gap: 15px;
+align-items: center;
+}
+
+.xo-text {
+font-size: 2rem;
+font-weight: bold;
+color: #ff0000;
+letter-spacing: 5px;
+}
+
+.creator-info {
+font-size: 1rem;
+color: #fff;
+letter-spacing: 1px;
+}
+
+.nav-menu {
+display: flex;
+gap: 40px;
+list-style: none;
+}
+
+.nav-menu a {
+color: #fff;
+text-decoration: none;
+font-size: 0.9rem;
+letter-spacing: 2px;
+transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+color: #ff0000;
+}
+
+/* HERO SECTION */
+.hero {
+height: 100vh;
+background: url("img/weeknd1.jpg") center/cover no-repeat fixed;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(10,10,10,0.8));
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+}
+
+.hero-title {
+font-size: 5rem;
+color: #fff;
+letter-spacing: 15px;
+margin-bottom: 20px;
+-webkit-text-stroke: 2px #ff0000;
+text-stroke: 2px #ff0000;
+}
+
+.hero-subtitle {
+font-size: 1.2rem;
+color: #fff;
+letter-spacing: 4px;
+margin-bottom: 40px;
+}
+
+.hero-btn {
+display: inline-block;
+padding: 15px 50px;
+background: #ff0000;
+color: #fff;
+text-decoration: none;
+letter-spacing: 3px;
+font-size: 1rem;
+border: 2px solid #ff0000;
+transition: all 0.3s;
+}
+
+.hero-btn:hover {
+background: transparent;
+color: #ff0000;
+}
+
+/* CONTAINER */
+.container {
+max-width: 1400px;
+margin: 0 auto;
+padding: 0 40px;
+}
+
+/* SECTION TITLE */
+.section-title {
+font-size: 4rem;
+text-align: center;
+color: #fff;
+letter-spacing: 10px;
+margin-bottom: 80px;
+position: relative;
+}
+
+.section-title::after {
+content: "";
+position: absolute;
+bottom: -20px;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 3px;
+background: #ff0000;
+}
+
+/* ABOUT SECTION */
+.about-section {
+padding: 120px 0;
+background: #000;
+}
+
+.about-grid {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.about-text p {
+font-size: 1.2rem;
+line-height: 2;
+color: #ccc;
+margin-bottom: 25px;
+}
+
+.about-stats {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.stat-box {
+background: linear-gradient(135deg, rgba(255,0,0,0.1), rgba(0,0,0,0.5));
+border: 2px solid #ff0000;
+padding: 30px;
+text-align: center;
+}
+
+.stat-box h3 {
+font-size: 3rem;
+color: #ff0000;
+margin-bottom: 10px;
+}
+
+.stat-box p {
+font-size: 1rem;
+color: #fff;
+letter-spacing: 3px;
+}
+
+/* TOUR SECTION */
+.tour-section {
+padding: 120px 0;
+background: #0a0a0a;
+}
+
+.tour-list {
+max-width: 900px;
+margin: 0 auto;
+}
+
+.tour-item {
+display: flex;
+align-items: center;
+gap: 40px;
+padding: 30px;
+background: rgba(255,255,255,0.02);
+border: 1px solid rgba(255,255,255,0.1);
+margin-bottom: 20px;
+transition: all 0.3s;
+}
+
+.tour-item:hover {
+background: rgba(255,0,0,0.05);
+border-color: #ff0000;
+transform: translateX(10px);
+}
+
+.tour-date {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-width: 80px;
+}
+
+.tour-date .month {
+font-size: 1rem;
+color: #ff0000;
+letter-spacing: 2px;
+}
+
+.tour-date .day {
+font-size: 3rem;
+color: #fff;
+font-weight: bold;
+}
+
+.tour-details {
+flex: 1;
+}
+
+.tour-details h3 {
+font-size: 1.5rem;
+color: #fff;
+margin-bottom: 5px;
+}
+
+.tour-details p {
+color: #999;
+font-size: 1rem;
+}
+
+.ticket-btn {
+padding: 12px 30px;
+background: #ff0000;
+color: #fff;
+text-decoration: none;
+letter-spacing: 2px;
+font-size: 0.9rem;
+border: 2px solid #ff0000;
+transition: all 0.3s;
+white-space: nowrap;
+cursor: pointer;
+font-family: "Emilio", Arial, sans-serif;
+}
+
+.ticket-btn:hover {
+background: transparent;
+color: #ff0000;
+}
+
+.ticket-btn.sold-out {
+background: #333;
+border-color: #333;
+color: #666;
+cursor: not-allowed;
+}
+
+/* MERCH SECTION */
+.merch-section {
+padding: 120px 0;
+background: #000;
+}
+
+.merch-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 40px;
+margin-bottom: 60px;
+}
+
+.merch-card {
+background: #0a0a0a;
+border: 1px solid rgba(255,255,255,0.1);
+overflow: hidden;
+transition: all 0.3s;
+}
+
+.merch-card:hover {
+border-color: #ff0000;
+transform: translateY(-10px);
+box-shadow: 0 20px 60px rgba(255,0,0,0.3);
+}
+
+.merch-card img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+transition: transform 0.3s;
+}
+
+.merch-card:hover img {
+transform: scale(1.05);
+}
+
+.merch-info {
+padding: 30px;
+text-align: center;
+}
+
+.merch-info h3 {
+font-size: 1.2rem;
+color: #fff;
+margin-bottom: 15px;
+letter-spacing: 2px;
+}
+
+.price {
+font-size: 1.8rem;
+color: #ff0000;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.buy-btn {
+display: inline-block;
+padding: 12px 40px;
+background: transparent;
+color: #fff;
+text-decoration: none;
+border: 2px solid #ff0000;
+letter-spacing: 2px;
+font-size: 0.9rem;
+transition: all 0.3s;
+cursor: pointer;
+font-family: "Emilio", Arial, sans-serif;
+}
+
+.buy-btn:hover {
+background: #ff0000;
+color: #fff;
+}
+
+.view-all-btn {
+display: block;
+margin: 0 auto;
+padding: 15px 60px;
+background: transparent;
+color: #fff;
+text-decoration: none;
+border: 2px solid #fff;
+letter-spacing: 3px;
+font-size: 1rem;
+transition: all 0.3s;
+width: fit-content;
+}
+
+.view-all-btn:hover {
+background: #fff;
+color: #000;
+}
+
+/* GALLERY SECTION */
+.gallery-section {
+padding: 120px 0;
+background: #0a0a0a;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 30px;
+}
+
+.gallery-card {
+position: relative;
+overflow: hidden;
+aspect-ratio: 1;
+cursor: pointer;
+}
+
+.gallery-card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s;
+}
+
+.gallery-card:hover img {
+transform: scale(1.2);
+}
+
+.gallery-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 30px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.gallery-card:hover .gallery-overlay {
+opacity: 1;
+}
+
+.gallery-overlay h3 {
+font-size: 2rem;
+color: #ff0000;
+letter-spacing: 3px;
+margin-bottom: 5px;
+}
+
+.gallery-overlay p {
+color: #ccc;
+font-size: 1rem;
+letter-spacing: 2px;
+}
+
+/* FOOTER */
+.footer {
+background: #000;
+border-top: 1px solid rgba(255,255,255,0.1);
+padding: 60px 40px;
+}
+
+.footer-content {
+text-align: center;
+}
+
+.footer-logo {
+font-size: 3rem;
+color: #ff0000;
+letter-spacing: 8px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.footer p {
+color: #666;
+font-size: 0.9rem;
+margin: 10px 0;
+letter-spacing: 1px;
+}
+
+.social-links {
+display: flex;
+gap: 30px;
+justify-content: center;
+margin-top: 30px;
+}
+
+.social-links a {
+color: #fff;
+text-decoration: none;
+font-size: 2rem;
+transition: color 0.3s;
+}
+
+.social-links a:hover {
+color: #ff0000;
+}
+
+/* MODAL */
+.modal {
+display: none;
+position: fixed;
+z-index: 2000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+background-color: #0a0a0a;
+margin: 10% auto;
+padding: 40px;
+border: 2px solid #ff0000;
+width: 90%;
+max-width: 500px;
+position: relative;
+}
+
+.close {
+color: #fff;
+position: absolute;
+top: 10px;
+right: 20px;
+font-size: 35px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.close:hover {
+color: #ff0000;
+}
+
+#modalTitle {
+color: #fff;
+font-size: 1.8rem;
+margin-bottom: 30px;
+letter-spacing: 2px;
+text-align: center;
+}
+
+.price-breakdown {
+color: #fff;
+}
+
+.price-row {
+display: flex;
+justify-content: space-between;
+padding: 15px 0;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+font-size: 1.1rem;
+}
+
+.price-row.total {
+border-top: 2px solid #ff0000;
+border-bottom: none;
+margin-top: 20px;
+padding-top: 20px;
+font-size: 1.4rem;
+color: #ff0000;
+}
+
+.confirm-btn {
+width: 100%;
+padding: 15px;
+background: #ff0000;
+color: #fff;
+border: 2px solid #ff0000;
+font-size: 1rem;
+letter-spacing: 2px;
+cursor: pointer;
+margin-top: 30px;
+transition: all 0.3s;
+font-family: "Emilio", Arial, sans-serif;
+}
+
+.confirm-btn:hover {
+background: transparent;
+color: #ff0000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.hero-title {
+font-size: 3rem;
+letter-spacing: 10px;
+}
+.navbar {
+padding: 15px 20px;
+}
+.nav-menu {
+gap: 20px;
+}
+.nav-menu a {
+font-size: 0.7rem;
+}
+.about-grid {
+grid-template-columns: 1fr;
+}
+.tour-item {
+flex-direction: column;
+text-align: center;
+}
+.section-title {
+font-size: 2.5rem;
+}
+.social-links a {
+font-size: 1.5rem;
+}
+}
